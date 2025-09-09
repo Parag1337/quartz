@@ -1,5 +1,5 @@
 ---
-title: "Random Title"
+title: "index"
 date: 2000-01-01
 tags: [foo, bar]
 ---
