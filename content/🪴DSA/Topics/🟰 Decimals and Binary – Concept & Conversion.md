@@ -1,8 +1,6 @@
 ---
-name: 🟰 Decimals and Binary – Concept & Conversion
+title: 🟰 Decimals and Binary – Concept & Conversion
 ---
-
-
 
 # 🔁 Decimal to Binary
 

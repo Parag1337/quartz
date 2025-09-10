@@ -1,7 +1,6 @@
 ---
-name: Python For Engineering
+title: Python For Engineering
 ---
-
 
 >Python : An versatile, high-level programming language known for its readability and simplicity
 

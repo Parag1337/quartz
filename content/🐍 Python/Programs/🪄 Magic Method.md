@@ -1,5 +1,5 @@
 ---
-name: 🪄 Magic Method
+title: 🪄 Magic Method
 ---
 
 Dunder method (double underscore) `__init__`,`__str__`,`__eq__` 

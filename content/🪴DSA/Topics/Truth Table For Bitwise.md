@@ -1,8 +1,6 @@
 ---
-name: Truth Table For Bitwise
+title: Truth Table For Bitwise
 ---
-
-
 
 ## 🔸 Bitwise AND (`&`)
 

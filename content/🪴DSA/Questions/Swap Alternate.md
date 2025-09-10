@@ -1,5 +1,5 @@
 ---
-name: Swap Alternate
+title: Swap Alternate
 ---
 
 ```

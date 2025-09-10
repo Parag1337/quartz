@@ -1,7 +1,6 @@
 ---
-name: callout note
+title: callout note
 ---
-
 
 > [!NOTE] Title
 > Contents

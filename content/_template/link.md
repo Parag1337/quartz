@@ -1,5 +1,5 @@
 ---
-name: link
+title: link
 ---
 
 [[https://|]]

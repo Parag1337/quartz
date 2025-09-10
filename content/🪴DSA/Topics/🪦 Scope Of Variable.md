@@ -1,5 +1,5 @@
 ---
-name: 🪦 Scope Of Variable
+title: 🪦 Scope Of Variable
 ---
 
 ### 🔹 **1. Local Scope**

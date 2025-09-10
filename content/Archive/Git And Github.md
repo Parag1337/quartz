@@ -1,7 +1,6 @@
 ---
-name: Git And Github
+title: Git And Github
 ---
-
 
 ## 🧰 Basic Git Commands
 
@@ -369,10 +368,3 @@ gh pr create
 
 ---
 ![[git-cheat-sheet-education.pdf]]
-
-
-
-
-
-
-

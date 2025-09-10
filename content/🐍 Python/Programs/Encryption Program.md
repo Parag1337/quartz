@@ -1,5 +1,5 @@
 ---
-name: Encryption Program
+title: Encryption Program
 ---
 
 ```python

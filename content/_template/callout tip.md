@@ -1,7 +1,6 @@
 ---
-name: callout tip
+title: callout tip
 ---
-
 
 > [!tip] Title
 > Contents

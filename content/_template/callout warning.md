@@ -1,7 +1,6 @@
 ---
-name: callout warning
+title: callout warning
 ---
-
 
 > [!warning] Title
 > Contents

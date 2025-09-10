@@ -1,5 +1,5 @@
 ---
-name: Questions
+title: Questions
 ---
 
 # Easy Level

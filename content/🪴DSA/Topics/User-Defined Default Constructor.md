@@ -1,8 +1,6 @@
 ---
-name: User-Defined Default Constructor
+title: User-Defined Default Constructor
 ---
-
-
 
 ```cpp
 #include <iostream>

@@ -1,7 +1,6 @@
 ---
-name: 🔁 Loops Overview
+title: 🔁 Loops Overview
 ---
-
 
 # 🔁 C++ Loops – Syntax & Examples
 
@@ -96,4 +95,3 @@ for (int x : arr) {
 ```
 
 ---
-

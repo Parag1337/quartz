@@ -1,5 +1,5 @@
 ---
-name: Material
+title: Material
 ---
 
 1. For roadmaps   
@@ -21,6 +21,3 @@ name: Material
 8. Hitesh Choudhary for Web development and chai aur code
 
 9. Harvard CS50
-
-
-

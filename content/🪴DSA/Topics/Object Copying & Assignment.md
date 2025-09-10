@@ -1,7 +1,6 @@
 ---
-name: Object Copying & Assignment
+title: Object Copying & Assignment
 ---
-
 
 # 📝 Shallow Copy vs Deep Copy in C++
 
@@ -187,4 +186,3 @@ Name: Babbar | Health: 12 | Level: D
     
 
 ---
-

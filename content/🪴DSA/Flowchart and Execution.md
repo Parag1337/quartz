@@ -1,5 +1,5 @@
 ---
-name: Flowchart and Execution
+title: Flowchart and Execution
 ---
 
 [[Lecture 1.pdf]]

@@ -1,5 +1,5 @@
 ---
-name: CSS Typography, Colors, Border
+title: CSS Typography, Colors, Border
 ---
 
 ## 1. CSS Fonts
@@ -79,4 +79,3 @@ You can define **colors** in multiple ways:
 ## 3. ![[CSS Box Model]]
 
 ![[Pasted image 20250821160042.png]]
-

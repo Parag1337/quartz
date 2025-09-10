@@ -1,7 +1,6 @@
 ---
-name: Basics of OOPs
+title: Basics of OOPs
 ---
-
 
 - OOP (Object-Oriented Programming) is a programming paradigm where everything revolves around _objects_.
 - An object is an **instance of a class**.

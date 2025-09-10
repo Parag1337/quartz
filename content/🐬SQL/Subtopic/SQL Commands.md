@@ -1,8 +1,6 @@
 ---
-name: SQL Commands
+title: SQL Commands
 ---
-
-
 
 ## 1. Database Commands
 
@@ -88,4 +86,3 @@ name: SQL Commands
 |`SHOW CREATE TRIGGER trig_name;`|Show trigger code|
 
 ---
-

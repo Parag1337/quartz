@@ -1,7 +1,6 @@
 ---
-name: Question on arrays
+title: Question on arrays
 ---
-
 
 1. ![[Finding Minimum and maximun no]]
 2. ![[Linear Search]]

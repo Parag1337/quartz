@@ -1,5 +1,5 @@
 ---
-name: HTML Forms – Complete Notes
+title: HTML Forms – Complete Notes
 ---
 
 ## 1. **Form Basics**

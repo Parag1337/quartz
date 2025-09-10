@@ -1,7 +1,6 @@
 ---
-name: Joins And Relation
+title: Joins And Relation
 ---
-
 
 ## ✅ Example: Foreign Key
 
@@ -174,4 +173,3 @@ JOIN employees e2
 This pairs employees reporting to the same boss.
 
 ---
-

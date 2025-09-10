@@ -1,7 +1,6 @@
 ---
-name: Encapsulation & Access Control
+title: Encapsulation & Access Control
 ---
-
 
 # Access Modifiers
 
@@ -175,4 +174,4 @@ it should be 5 but it is 8 due to
 **padding**, and **Greedy alignment**
 
 ---
-# 
+#

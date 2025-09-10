@@ -1,4 +1,5 @@
-
+---
+title : Arrays
 ---
 ## ✅ **What is an Array?**
 

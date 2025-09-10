@@ -1,5 +1,5 @@
 ---
-name: 🛒 Functions
+title: 🛒 Functions
 ---
 
 ### Python Function Arguments - Cleaned & Improved Notes

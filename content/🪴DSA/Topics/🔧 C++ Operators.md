@@ -1,5 +1,5 @@
 ---
-name: 🔧 C++ Operators
+title: 🔧 C++ Operators
 ---
 
 ### ✅ Types of Operators in C++

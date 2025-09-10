@@ -1,7 +1,6 @@
 ---
-name: Working with Tables
+title: Working with Tables
 ---
-
 
 ## 🏗️ 1. Create a Table
 

@@ -1,7 +1,6 @@
 ---
-name: Object Oriented Programming in C++
+title: Object Oriented Programming in C++
 ---
-
 
 # [[Basics of OOPs]]
 

@@ -1,8 +1,6 @@
 ---
-name: Object Lifecycle Construction and Destruction
+title: Object Lifecycle Construction and Destruction
 ---
-
-
 
 # Default Constructor in C++
 
@@ -204,4 +202,3 @@ Destructor called      // for 'b' (dynamic object, after delete)
     - Releasing **network/database connections**.
 
 ---
-

@@ -1,5 +1,5 @@
 ---
-name: SQL Constraints
+title: SQL Constraints
 ---
 
 ## 🔹 UNIQUE Constraint
@@ -297,4 +297,3 @@ ALTER TABLE transactions
 	FOREIGN KEY(customer_id) REFERENCES customers (customer_id)
 	ON DELETE SET NULL;
 ```
-

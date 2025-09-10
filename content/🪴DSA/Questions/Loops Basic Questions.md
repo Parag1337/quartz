@@ -1,7 +1,6 @@
 ---
-name: Loops Basic Questions
+title: Loops Basic Questions
 ---
-
 
 # Question 1 : Rectangle 
 ```

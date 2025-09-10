@@ -1,8 +1,6 @@
 ---
-name: 🎪 Functions
+title: 🎪 Functions
 ---
-
-
 
 ## 🔧 What is a Function?
 
@@ -91,16 +89,3 @@ int main() {
 - Parameters are optional —  you can pass values or not.
  
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-

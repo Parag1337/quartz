@@ -1,5 +1,5 @@
 ---
-name: SQL Transactions & Date Time
+title: SQL Transactions & Date Time
 ---
 
 ##  Autocommit, Commit & Rollback

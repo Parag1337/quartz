@@ -1,7 +1,6 @@
 ---
-name: Sorting, Filtering & Grouping
+title: Sorting, Filtering & Grouping
 ---
-
 
 ## OrderBy Clause
 
@@ -196,4 +195,3 @@ GROUP BY first_name, last_name WITH ROLLUP;
 ```
 
 ---
-

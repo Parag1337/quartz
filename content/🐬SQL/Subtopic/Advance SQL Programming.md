@@ -1,7 +1,6 @@
 ---
-name: Advance SQL Programming
+title: Advance SQL Programming
 ---
-
 
 Perfect start 👍 Let’s polish your **Stored Procedure** notes, fix typos, add explanations, and make them more structured for easy understanding.
 

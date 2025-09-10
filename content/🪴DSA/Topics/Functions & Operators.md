@@ -1,7 +1,6 @@
 ---
-name: Functions & Operators
+title: Functions & Operators
 ---
-
 
 #  SQL Functions
 

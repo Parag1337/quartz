@@ -1,5 +1,5 @@
 ---
-name: Linear Search
+title: Linear Search
 ---
 
 ```cpp

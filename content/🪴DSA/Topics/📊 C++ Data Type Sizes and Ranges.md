@@ -1,7 +1,6 @@
 ---
-name: 📊 C++ Data Type Sizes and Ranges
+title: 📊 C++ Data Type Sizes and Ranges
 ---
-
 
 | Data Type            | Size (Bytes)      | Range (Approximate)                                      |
 | -------------------- | ----------------- | -------------------------------------------------------- |

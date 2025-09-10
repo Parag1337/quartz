@@ -1,5 +1,5 @@
 ---
-name: Untitled
+title: Untitled
 ---
 
 - for process use rectangle
@@ -7,4 +7,4 @@ name: Untitled
 - for decision use rhombus
 - for connector use circle
 - for termination of code use ecllipse
-- 
+-

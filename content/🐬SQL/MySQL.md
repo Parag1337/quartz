@@ -1,5 +1,7 @@
-
 ---
+title : MySQL
+---
+
 
 # 🐬[[SQL Commands]] 
 

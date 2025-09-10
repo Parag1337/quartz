@@ -1,5 +1,5 @@
 ---
-name: Database Objects (1)
+title: Database Objects (1)
 ---
 
 Got it 👍 Let’s enrich the **Views** and **Indexes** notes with **real-world examples + SQL examples** so they’re crystal clear and exam-ready.

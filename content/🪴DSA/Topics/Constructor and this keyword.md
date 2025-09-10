@@ -1,7 +1,6 @@
 ---
-name: Constructor and this keyword
+title: Constructor and this keyword
 ---
-
 
 ```cpp
 #include <iostream>

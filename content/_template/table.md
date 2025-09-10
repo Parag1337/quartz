@@ -1,10 +1,7 @@
 ---
-name: table
+title: table
 ---
-
 
 |     |     |
 | --- | --- |
 |     |     |
-
-

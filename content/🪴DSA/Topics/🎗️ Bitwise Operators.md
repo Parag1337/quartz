@@ -1,5 +1,5 @@
 ---
-name: 🎗️ Bitwise Operators
+title: 🎗️ Bitwise Operators
 ---
 
 # 🔧 List of Bitwise Operators in C/C++

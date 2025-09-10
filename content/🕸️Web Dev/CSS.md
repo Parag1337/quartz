@@ -1,7 +1,6 @@
 ---
-name: CSS
+title: CSS
 ---
-
 
 # **Preference (CSS Specificity Order)**
 
@@ -56,4 +55,4 @@ Things Included :
 
 1. CSS Fonts
 2. CSS Colors
-3. Box Model 
+3. Box Model

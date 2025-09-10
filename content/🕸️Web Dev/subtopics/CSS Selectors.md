@@ -1,5 +1,5 @@
 ---
-name: CSS Selectors
+title: CSS Selectors
 ---
 
 ### **1. Element Selector**

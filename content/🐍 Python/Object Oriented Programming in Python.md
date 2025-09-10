@@ -1,7 +1,6 @@
 ---
-name: Object Oriented Programming in Python
+title: Object Oriented Programming in Python
 ---
-
 
 [[Python For Engineering]]
 

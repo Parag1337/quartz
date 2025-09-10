@@ -1,4 +1,5 @@
-
+---
+title : Number Building Logic
 ---
 
 ### ✅ 1. `answer = (10^n * digit) + answer`

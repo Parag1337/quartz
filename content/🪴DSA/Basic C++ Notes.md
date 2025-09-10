@@ -1,8 +1,6 @@
 ---
-name: Basic C++ Notes
+title: Basic C++ Notes
 ---
-
-
 
 # ✅ Basic C++ Program
 
@@ -279,4 +277,3 @@ void greet() { cout << "Hello!"; }               // ❌ No Return + No Parameter
 
 ---
 # [[🧬Arrays]]
-

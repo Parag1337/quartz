@@ -1,5 +1,5 @@
 ---
-name: Finding Minimum and maximun no
+title: Finding Minimum and maximun no
 ---
 
 ```cpp

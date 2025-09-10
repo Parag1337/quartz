@@ -1,7 +1,6 @@
 ---
-name: Table code
+title: Table code
 ---
-
 
 ## **Complete Form Example (registration style)**
 
@@ -104,4 +103,4 @@ name: Table code
 ✔ Radio, checkbox, file upload  
 ✔ Select dropdown, range, color  
 ✔ Textarea  
-✔ Submit & reset buttons  
+✔ Submit & reset buttons

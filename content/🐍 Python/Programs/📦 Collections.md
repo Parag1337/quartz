@@ -1,7 +1,6 @@
 ---
-name: 📦 Collections
+title: 📦 Collections
 ---
-
 
 ## 1. 📋 **List**
 
@@ -233,4 +232,3 @@ print(help(capitals))    # Detailed documentation
 ```
 
 ---
-

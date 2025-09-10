@@ -1,5 +1,5 @@
 ---
-name: Combined Example (Static + Dynamic Together)
+title: Combined Example (Static + Dynamic Together)
 ---
 
 ## [[Combined Example (Static + Dynamic Together)]]

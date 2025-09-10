@@ -1,7 +1,6 @@
 ---
-name: Untitled 1
+title: Untitled 1
 ---
-
 
 npx quartz sync
 npx quartz build --serve

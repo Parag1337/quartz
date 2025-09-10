@@ -1,5 +1,5 @@
 ---
-name: Class notes
+title: Class notes
 ---
 
 ```cpp

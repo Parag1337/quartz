@@ -1,8 +1,6 @@
 ---
-name: File Handling in Python
+title: File Handling in Python
 ---
-
-
 
 ## 📁 Python File Detection
 

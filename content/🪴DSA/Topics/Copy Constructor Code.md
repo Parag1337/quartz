@@ -1,8 +1,6 @@
 ---
-name: Copy Constructor Code
+title: Copy Constructor Code
 ---
-
-
 
 ```cpp
 #include <iostream>

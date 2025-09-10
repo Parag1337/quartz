@@ -1,5 +1,5 @@
 ---
-name: Memory Allocation
+title: Memory Allocation
 ---
 
 # Static vs Dynamic Allocation in C++

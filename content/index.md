@@ -1,3 +1,5 @@
-# Welcome To My Notes
+---
+title : Index
+---
 
-# [[🪴DSA/Index]]
+# Welcome to My notes

@@ -1,7 +1,6 @@
 ---
-name: CSS (1)
+title: CSS (1)
 ---
-
 
 # **Preference (CSS Specificity Order)**
 
@@ -135,4 +134,3 @@ I’ll **clean this up**, fix typos, expand with **shorthand examples**, and add
 ## 3. [[CSS Box Model]]
 
 ![[Pasted image 20250821160042.png]]
-

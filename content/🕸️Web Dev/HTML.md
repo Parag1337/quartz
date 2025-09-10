@@ -1,8 +1,6 @@
 ---
-name: HTML
+title: HTML
 ---
-
-
 
 ## **Basic HTML Structure**
 
@@ -499,4 +497,3 @@ Displays measurement within range (like disk usage).
 ```
 
 ---
-

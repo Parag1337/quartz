@@ -1,5 +1,5 @@
 ---
-name: CSS Box Model
+title: CSS Box Model
 ---
 
 Every HTML element is treated as a **box** in CSS. The box model defines how **content**, **padding**, **border**, and **margin** are rendered around an element.  
