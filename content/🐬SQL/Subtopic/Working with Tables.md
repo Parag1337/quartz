@@ -1,8 +1,7 @@
 ---
-title: "tables"
-date: 2000-01-01
-tags: [foo, bar]
+name: Working with Tables
 ---
+
 
 ## 🏗️ 1. Create a Table
 

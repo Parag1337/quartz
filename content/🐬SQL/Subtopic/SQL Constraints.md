@@ -1,7 +1,5 @@
 ---
-title: "sql constrains"
-date: 2000-01-01
-tags: [foo, bar]
+name: SQL Constraints
 ---
 
 ## 🔹 UNIQUE Constraint

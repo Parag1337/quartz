@@ -1,9 +1,6 @@
 ---
-title: "Sql time adn data"
-date: 2000-01-01
-tags: [foo, bar]
+name: SQL Transactions & Date Time
 ---
-
 
 ##  Autocommit, Commit & Rollback
 

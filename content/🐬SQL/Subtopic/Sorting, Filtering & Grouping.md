@@ -1,8 +1,7 @@
 ---
-title: "sorting and filtering"
-date: 2000-01-01
-tags: [foo, bar]
+name: Sorting, Filtering & Grouping
 ---
+
 
 ## OrderBy Clause
 

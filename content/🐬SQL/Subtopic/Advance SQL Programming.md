@@ -1,13 +1,9 @@
 ---
-title: "Advance sql"
-date: 2000-01-01
-tags: [foo, bar]
+name: Advance SQL Programming
 ---
 
-# My Note Content
 
-This is my note.
-
+Perfect start 👍 Let’s polish your **Stored Procedure** notes, fix typos, add explanations, and make them more structured for easy understanding.
 
 ---
 

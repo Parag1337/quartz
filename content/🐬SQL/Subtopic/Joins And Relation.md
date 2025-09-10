@@ -1,8 +1,7 @@
 ---
-title: "joins"
-date: 2000-01-01
-tags: [foo, bar]
+name: Joins And Relation
 ---
+
 
 ## ✅ Example: Foreign Key
 

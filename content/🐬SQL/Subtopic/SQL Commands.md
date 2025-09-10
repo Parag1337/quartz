@@ -1,8 +1,7 @@
 ---
-title: "sql commands"
-date: 2000-01-01
-tags: [foo, bar]
+name: SQL Commands
 ---
+
 
 
 ## 1. Database Commands
