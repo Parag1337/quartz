@@ -142,7 +142,7 @@ Big-O keeps only the **dominant term**.
     
 - `n ≤ 10^6` or higher → O(n) or O(log n) required
     
-![[Pasted image 20250828225552.png|400]]
+![[Pasted image 20250828225552 1.png|400]]
 
 ---
 
