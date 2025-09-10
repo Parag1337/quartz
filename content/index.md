@@ -1,7 +1,5 @@
 ---
 title: "index page"
-date: 2000-01-01
-tags: [foo, bar]
 ---
 
 # Stored Procedures 
