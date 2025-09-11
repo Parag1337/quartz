@@ -50,9 +50,9 @@ Things Included :
 	9. Pseudo-elements
 
 ---
-
 # [[CSS Typography, Colors, Border]]
 
 1. CSS Fonts
+
 2. CSS Colors
 3. Box Model

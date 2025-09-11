@@ -53,13 +53,13 @@ Used to display images in an HTML document.
 
 **Important Attributes:**
 
-|Attribute|Description|Example|
-|---|---|---|
-|`src`|Path to the image file.|`src="photo.jpg"`|
-|`alt`|Alternate text if image cannot be displayed.|`alt="A cat"`|
-|`width`|Width of the image (in px or %).|`width="300"`|
-|`height`|Height of the image (in px or %).|`height="200"`|
-|`loading`|Lazy loading to improve performance. Values: `lazy`, `eager`.|`loading="lazy"`|
+| Attribute | Description                                                   | Example           |
+| --------- | ------------------------------------------------------------- | ----------------- |
+| `src`     | Path to the image file.                                       | `src="photo.jpg"` |
+| `alt`     | Alternate text if image cannot be displayed.                  | `alt="A cat"`     |
+| `width`   | Width of the image (in px or %).                              | `width="300"`     |
+| `height`  | Height of the image (in px or %).                             | `height="200"`    |
+| `loading` | Lazy loading to improve performance. Values: `lazy`, `eager`. | `loading="lazy"`  |
 
 ---
 

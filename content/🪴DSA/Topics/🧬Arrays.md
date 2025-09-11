@@ -107,7 +107,7 @@ cout << matrix[1][2];  // Output: 6
 - `Swap(arr[i],arr[i+1])` This will swap the value. 
 ---
 
-- [ ]  **Array operations (traversal, insertion, deletion)**  
-- [ ] **Difference between array and pointer**  
-- [ ] **Dynamic arrays using `new` in C++**  
-- [ ] **Memory representation diagram**
+- [x] **Array operations (traversal, insertion, deletion)** [completed:: 2025-09-11]
+- [x] **Difference between array and pointer**   [completed:: 2025-09-11]
+- [x] **Dynamic arrays using `new` in C++**   [completed:: 2025-09-11]
+- [x] **Memory representation diagram** [completed:: 2025-09-11]
