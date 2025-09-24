@@ -5,107 +5,75 @@ title: Untitled 1
 npx quartz sync
 npx quartz build --serve
 
-write a program to reperset a complete tree using array
-also find left and right children
-# Classification of OOPs Topics
-
-Yes 👍 we can group **constructors and destructor together** under a single section, since they both handle the **lifecycle management of objects** (creation & cleanup).
-
-Here’s the improved classification with that adjustment:
+Sure! Based on the timestamps and topics you’ve shared, here’s a **structured classification** for your notes in OOP concepts:
 
 ---
 
-## 1. Introduction
+## 🟢 Basics of OOP
 
-- Overview of OOPs concepts and importance
+- 00:00 - Introduction
     
-
----
-
-## 2. Basics of OOP
-
-- What is OOPs? (00:35)
+- 00:31 - Encapsulation ?
     
-- Class & Objects (05:02)
+- 02:58 - Promotion
     
-- Empty Class (11:12)
+- 03:52 - Full Encapsulation
     
-- Behind the Scenes of Objects (27:09)
+- 05:24 - Why Encapsulation ?
+    
+- 08:05 - Implementation
     
 
 ---
 
-## 3. Encapsulation & Access Control
+## 🏗 Inheritance
 
-- Access Modifiers (16:00)
+- 10:36 - Inheritance
     
-- Getter & Setter Functions (22:00)
+- 14:53 - Implementation
     
-- Homework (28:45)
-    
-
----
-
-## 4. Memory Allocation
-
-- Static vs Dynamic Allocation (29:50)
+- 25:44 - Access Modifiers and Inheritance
     
 
----
+### 🔹 Types of Inheritance
 
-## 5. Object Lifecycle: Construction & Destruction
-
-- Constructor Basics (35:14)
+- 42:14 - Types of Inheritance
     
-- Default Constructor (37:31)
+- 43:10 - Single Inheritance
     
-- Parameterized Constructor (40:50)
+- 46:02 - Multi-Level Inheritance
     
-- `this` Keyword (42:00)
+- 48:42 - Multiple Inheritance
     
-- Copy Constructor (49:08)
+- 53:10 - Hierarchical Inheritance
     
-- Destructor (01:12:04)
+- 57:53 - Hybrid Inheritance
     
-- Homework (01:16:47)
+- 01:00:00 - Inheritance Ambiguity
     
 
 ---
 
-## 6. Object Copying & Assignment
+## 🔄 Polymorphism
 
-- Shallow vs Deep Copy (59:46)
+- 01:06:00 - Polymorphism
     
-- Assignment Operator Overloading (01:09:32)
+- 01:07:47 - Compile Time Polymorphism
     
-
----
-
-## 7. Static Members
-
-- Static Keyword (01:17:40)
-    
-- Static Functions (01:23:00)
+- 01:22:00 - Run Time Polymorphism
     
 
 ---
 
-## 8. Wrap-Up
+## 🕵️ Abstraction
 
-- Summary / Revision (01:26:10)
+- 01:30:00 - Abstraction
+    
+- 01:34:00 - Homework
     
 
 ---
 
-### ✅ Why this is better:
+If you want, I can also **rearrange them in a “learning flow”**, so you can read from simple to advanced concepts smoothly in your notes.
 
-- **Constructors + Destructor** are now in one section → highlights full lifecycle (creation → initialization → destruction).
-    
-- **Copying & Assignment** stays separate, since it’s more about object behavior than lifecycle.
-    
-- Flow is still progressive and easy for learners.
-    
-
-👉 Do you want me to also **reorder Copying & Assignment** to come _inside_ the lifecycle section (between Copy Constructor & Destructor) so it flows as: Creation → Copy → Assignment → Destruction?
-
-![[Pasted image 20250909201041.png]]
+Do you want me to do that?

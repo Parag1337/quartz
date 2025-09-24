@@ -35,5 +35,20 @@ Accessing the class
 ---
 # [[Object Copying & Assignment]]
 
+1. Shallow Copy : Default Copy
+2. Deep copy
+
+
 ---
 # [[Static Members]]
+
+1. Syntax
+2. Properties.
+
+---
+---
+
+
+# [[Encapsulaton]]
+
+
