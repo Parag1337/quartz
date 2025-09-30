@@ -1,0 +1,5 @@
+---
+title: Polymorphism
+date: 2025-09-30
+tags: 
+---

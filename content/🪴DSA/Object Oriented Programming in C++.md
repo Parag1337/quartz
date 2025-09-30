@@ -56,3 +56,5 @@ Accessing the class
 # [[Inheritance]]
 
 ---
+
+# [[Polymorphism]]
