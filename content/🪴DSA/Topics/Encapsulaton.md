@@ -4,35 +4,94 @@ date: 2025-09-23
 tags: 
 ---
 
-**Encapsulation** : Wrapping up data members and functions 
+# **Encapsulation**
 
-Fully Encapuslted Class is class where all Data members are private
+### Definition
 
-## Why ?
-Information Hiding : Your data can be hidden
-If we want , we can make class read Only
+Encapsulation is the **wrapping up of data members (variables) and member functions (methods)** into a single unit called a **class**.  
+It ensures that the internal details of a class are **hidden** from the outside world, and access is controlled through **public methods** (getters & setters).
 
+---
+
+### Fully Encapsulated Class
+
+- A **fully encapsulated class** is one where **all data members are marked as `private`**.
+- This way, no one can directly access or modify the variables from outside the class.
+- Access is only possible via **public getter/setter methods**.
+
+---
+
+### Why Encapsulation?
+
+1. **Information Hiding** → Prevents direct access to sensitive data.
+2. **Control** → We can control how data is modified (read-only / write-only).
+3. **Flexibility** → Implementation can be changed without affecting external code.
+4. **Security** → Protects data integrity.
+
+---
+
+### Example: Encapsulation in C++
 
 ```cpp
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-Class Student{
-Private: 
-	String name;
-	int age;
-	int height'
-	
-Public :
-	int getAge(){
-		return this -> age;
-	}	
-}
+class Student {
+private: 
+    string name;
+    int age;
+    int height;
 
+public:
+    // Getter for age
+    int getAge() {
+        return this->age;
+    }
 
-int main(){
-	Student first;
-	
-	
+    // Setter for age
+    void setAge(int a) {
+        if (a > 0)   // ✅ validation possible
+            this->age = a;
+    }
+
+    // Getter for name
+    string getName() {
+        return this->name;
+    }
+
+    // Setter for name
+    void setName(string n) {
+        this->name = n;
+    }
+};
+
+int main() {
+    Student first;
+
+    // Set data using setters
+    first.setName("Parag");
+    first.setAge(19);
+
+    // Access data using getters
+    cout << "Name: " << first.getName() << endl;
+    cout << "Age: " << first.getAge() << endl;
+
+    return 0;
 }
 ```
+
+---
+
+### Output
+
+```
+Name: Parag
+Age: 19
+```
+
+---
+
+✅ With encapsulation:
+
+- We **cannot directly do** `first.age = 19;` (since `age` is private).
+- We **must use** `first.setAge(19);` which gives us **control + security**.

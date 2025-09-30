@@ -51,4 +51,8 @@ Accessing the class
 
 # [[Encapsulaton]]
 
+---
 
+# [[Inheritance]]
+
+---
