@@ -58,9 +58,6 @@ vector<int> v1(5, 100);    // {100, 100, 100, 100, 100}
 vector<int> v2(5);         // {0, 0, 0, 0, 0} (default initialized)
 vector<int> v3(v1);        // Copy of v1
 ```
-
----
-
 ### **Insertion**
 
 ```cpp
@@ -72,16 +69,12 @@ vector<pair<int, int>> vec;
 vec.push_back({1, 2});
 vec.emplace_back(1, 2);  // cleaner than push_back
 ```
-
----
 ### **Accessing Elements**
 
 ```cpp
 cout << v[0] << " " << v.at(0);  // Direct access
 cout << v.back();                // Last element
 ```
-
----
 ### **Iterators**
 
 Iterators behave like pointers to elements inside the container.
@@ -116,9 +109,6 @@ for (auto it = v.begin(); it != v.end(); it++)
 for (auto it : v)
     cout << it << " ";
 ```
-
----
-
 ### **Modifiers**
 
 ```cpp
@@ -249,5 +239,281 @@ It is `FIFO` Based
 ## 8. Set
 
 Everything is **Sorted Manner** and **unique**
+
+```cpp
+set<int> st;
 ```
+
+```cpp
+st.insert(1);    // {1}
+st.emplace(2);   // {1, 2}
+st.insert(2);    // {1, 2} (duplicate ignored)
+st.insert(4);    // {1, 2, 4}
+st.insert(3);    // {1, 2, 3, 4}
+st.insert(5);    // {1, 2, 3, 4, 5}
 ```
+
+```cpp
+auto it = st.find(3);  // Iterator which will point to 3
+
+auto it = st.find(3);  // {1, 2, 3, 4, 5} It doesnt exists do point to the after end
+
+st.erase(5);  // 5 Will be deleted in logn time
+
+cout << st.count(1)   // it exists 1 or else 0
+
+st.erase(1,3)  // deleted everythin between
+
+auto it = st.lower_bound(2);
+auto it = st.upper_bound(3);
+```
+### Key Functions Recap
+
+- `insert(x)` → adds element `x` if not present
+- `emplace(x)` → same as insert but constructs in place (faster sometimes)
+- `find(x)` → returns iterator to `x` if exists, else `end()`
+- `erase(x)` → deletes `x`
+- `erase(it1, it2)` → deletes elements in `[it1, it2)`
+- `count(x)` → returns 0 or 1 (since unique)
+- `lower_bound(x)` → first element `>= x`
+- `upper_bound(x)` → first element `> x`
+
+
+## 9. Multiset
+
+A **multiset** in C++ is an **ordered associative container** similar to `set`, but the key difference is:
+
+- It stores **elements in sorted order** (like `set`).
+- It **allows duplicate values** (unlike `set`).
+- Internally implemented as a **balanced binary search tree (typically Red-Black Tree)**.
+- Operations (`insert`, `erase`, `find`, `count`, etc.) take **O(log n)** time.
+
+```cpp
+multipset<int> ms;
+```
+
+```cpp
+ms.insert(1);  //{1}
+ms.insert(1);  //{1,1}
+ms.insert(1);  //{1,1,1}
+
+ms.erase(1); // all 1's are erased
+
+int cnt = ms.count(1);
+// Only a single one erased
+ms.erase(ms.find(1));
+
+ms.erase(ms.find(1), ms.find(1) + 2)
+```
+
+## 10. Unordered Set
+
+A **`unordered_set`** is an **associative container** that stores **unique elements** (like `set`) but with **no particular order**. It is implemented using **hash tables**.
+
+- **Unique elements only** – duplicates are **not allowed**.
+- **Unordered** – elements are **not sorted**; order depends on the hash function.
+- **Average O(1) time** for insert, erase, and find (worst-case O(n) in rare cases).
+- Useful when you **don’t need sorted data** but want **fast lookup**.
+
+All the operations of set works but only and only `Upper and Lower Bound` doesn't not work
+`O(n)`
+
+## 11. Map
+
+
+A **`map`** is an **associative container** that stores **key-value pairs**
+- Each **key is unique**.
+- The **keys are stored in sorted order** by default (ascending).
+- Provides **fast search, insertion, and deletion** in **O(log n)** time using a **balanced binary search tree (usually Red-Black tree)**
+
+### Key Features
+
+1. **Unique keys** – no duplicate keys allowed.
+2. **Sorted by key** – iteration is in **ascending order of keys** by default.
+3. **Key-value pairs** – access value using the key.
+4. **Operations**: `insert()`, `emplace()`, `find()`, `erase()`, `count()`, `size()`, `empty()`, `swap()`.
+
+```cpp
+map <int,int> mpp;
+map int,pair<int,int>,int> mpp2;
+
+mpp[1] = 2;  // On key 1 store 2    {1,2}
+mpp.emplace({3,1});  // On key 3 store  {3,1}
+mpp.insert({2,4});   // {2,4}
+
+map2[{2,3}] = 10;  // Key is {2,3} and value stored is 10
+
+for(auto it : mpp){
+	cout << it.first << " " << it.secound << endl;
+}
+
+cout << mpp[1]  // output 2
+
+auto it = mpp.find(3) 
+cout << *(it).secound;
+
+
+auto it = mpp.find(5)  // if doesnt exsits point after last element
+
+auto it = mpp.lower_bound(2);
+auto it = mpp.upper_bound(3);
+```
+
+## 12. Multimaps
+
+Everything s same as map, only it can store multiple Keys
+Only `mpp[key]` cannot be used here.
+
+
+## 13. Unordered Maps
+
+Same difference as unordered set difference
+`O(n`)
+
+Got it! Let me organize and **explain these C++ algorithms clearly** with corrected code and explanations.
+
+---
+
+## 1. Sorting Arrays
+
+### **Basic Sorting**
+
+```cpp
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[] = {1, 5, 3, 2};
+    int n = 4;
+
+    // Sort in ascending order
+    sort(a, a + n); // {1, 2, 3, 5}
+
+    // Sort in descending order
+    sort(a, a + n, greater<int>()); // {5, 3, 2, 1}
+
+    // Print sorted array
+    for(int i=0;i<n;i++) cout << a[i] << " ";
+    cout << endl;
+}
+```
+
+### **Custom Sorting with Pairs**
+
+- Sort **by second element ascending**, if equal then **first element descending**:
+    
+
+```cpp
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+bool comp(pair<int,int> p1, pair<int,int> p2) {
+    if(p1.second < p2.second) return true;
+    if(p1.second > p2.second) return false;
+    // If second elements are equal, sort by first descending
+    return p1.first > p2.first;
+}
+
+int main() {
+    pair<int,int> a[] = {{1,2}, {2,1}, {4,1}};
+    int n = 3;
+
+    sort(a, a + n, comp);
+
+    for(int i=0; i<n; i++) {
+        cout << "(" << a[i].first << "," << a[i].second << ") ";
+    }
+    cout << endl; // Output: (4,1) (2,1) (1,2)
+}
+```
+
+---
+
+## 2. Counting Set Bits
+
+- `__builtin_popcount(x)` → counts **number of 1s** in **binary representation** of an integer.
+    
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 7; // binary 111
+    int cnt = __builtin_popcount(num);
+    cout << "Set bits in 7: " << cnt << endl; // 3
+
+    long long num2 = 454564656456;
+    int cnt2 = __builtin_popcountll(num2); // use popcountll for long long
+    cout << "Set bits: " << cnt2 << endl;
+}
+```
+
+---
+
+## 3. Next Permutation
+
+- Generate **all lexicographical permutations** of a string or array:
+    
+
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    string s = "123";
+
+    do {
+        cout << s << endl;
+    } while(next_permutation(s.begin(), s.end()));
+}
+```
+
+- Output:
+    
+
+```
+123
+132
+213
+231
+312
+321
+```
+
+---
+
+## 4. Maximum Element in Array
+
+```cpp
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[] = {5, 2, 9, 1};
+    int n = 4;
+
+    int maxo = *max_element(a, a + n); // returns largest element
+    cout << "Maximum: " << maxo << endl; // 9
+}
+```
+
+---
+
+✅ Summary of Useful STL Functions
+
+|Function|Use|
+|---|---|
+|`sort(a, a+n)`|Sort ascending|
+|`sort(a, a+n, greater<int>())`|Sort descending|
+|`__builtin_popcount(x)`|Count set bits in `int`|
+|`__builtin_popcountll(x)`|Count set bits in `long long`|
+|`next_permutation(begin, end)`|Next lexicographical permutation|
+|`max_element(begin, end)`|Find max element|
+|`min_element(begin, end)`|Find min element|
+
+---
