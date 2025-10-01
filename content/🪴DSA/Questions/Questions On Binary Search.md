@@ -99,7 +99,7 @@ int MountainPeak(int arr[], int size) {
         else
             end = mid;        // decreasing slope → go left
     }
-
+	
     return start;  // peak index
 }
 

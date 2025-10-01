@@ -22,11 +22,11 @@ Let's break it with `digits = [1, 2, 3]` and `n = 0 initially` (we increment `n`
 
 #### → This builds the number in **normal** order (like from left to right)
 
-|Step|Digit|`answer = answer * 10 + digit`|Result|
-|---|---|---|---|
-|1|1|`0 * 10 + 1` = `1`|1|
-|2|2|`1 * 10 + 2` = `12`|12|
-|3|3|`12 * 10 + 3` = `123`|123|
+| Step | Digit | `answer = answer * 10 + digit` | Result |
+| ---- | ----- | ------------------------------ | ------ |
+| 1    | 1     | `0 * 10 + 1` = `1`             | 1      |
+| 2    | 2     | `1 * 10 + 2` = `12`            | 12     |
+| 3    | 3     | `12 * 10 + 3` = `123`          | 123    |
 
 👉 So the final answer is `123` – same as the original sequence.
 

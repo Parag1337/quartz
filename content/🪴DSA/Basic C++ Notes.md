@@ -21,6 +21,7 @@ int main() {
     - Tabs (`'\t'`)
     - Newlines (`'\n'`) — when you press Enter)
 
+
 ---
 
 # 🧠 Data Types & Variables
@@ -44,6 +45,9 @@ double d = 1.23; // 8 bytes
 ```cpp
 cout << sizeof(a);  // Output: 4 (on most systems)
 ```
+
+<img src="https://static.takeuforward.org/content/-UZ-CN-Hb" width="500">
+****
 
 ---
 #  [[📊 C++ Data Type Sizes and Ranges]]
