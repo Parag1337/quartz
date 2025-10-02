@@ -43,6 +43,17 @@ pair<int, int> arr[] = {{1,2}, {2,5}, {5,1}};
 cout << arr[1].second;  // 5
 ```
 
+
+| **Member / Method**                                     | **Description**                                      | **Example**                                                  |
+| ------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
+| `first`                                                 | Stores the first value of the pair                   | `pair<int, string> p = {1, "apple"}; cout << p.first; // 1`  |
+| `second`                                                | Stores the second value of the pair                  | `cout << p.second; // apple`                                 |
+| `make_pair(a, b)`                                       | Creates a pair object with values `(a, b)`           | `auto p = make_pair(10, 20.5);`                              |
+| `tie(x, y)`                                             | Unpacks values from a pair into variables            | `int x, y; pair<int,int> p={1,2}; tie(x,y)=p; // x=1, y=2`   |
+| `swap(p2)`                                              | Swaps contents with another pair                     | `pair<int,int> p1={1,2}, p2={3,4}; p1.swap(p2);`             |
+| Relational operators (`==`, `!=`, `<`, `>`, `<=`, `>=`) | Compare pairs lexicographically (first, then second) | `pair<int,int> p1={1,2}, p2={1,3}; cout << (p1<p2); // true` |
+
+
 ---
 
 ## 2. Vectors
@@ -135,6 +146,27 @@ cout << v.empty();    // Check if empty (1 = true, 0 = false)
 v1.swap(v2);          // Swap contents
 v.clear();            // Erase all elements
 ```
+
+### 📌 **Table: Common Operations on `vector<pair<int,int>>`**
+
+|**Operation**|**Description**|**Example**|
+|---|---|---|
+|`push_back({a, b})`|Adds a pair at the end|`vector<pair<int,int>> vp; vp.push_back({1,2});`|
+|`emplace_back(a, b)`|Adds a pair (faster than `push_back`)|`vp.emplace_back(3,4);`|
+|`vp[i].first`|Access first element of i-th pair|`cout << vp[0].first; // 1`|
+|`vp[i].second`|Access second element of i-th pair|`cout << vp[0].second; // 2`|
+|`for (auto p : vp)`|Range loop over pairs|`for (auto p : vp) cout << p.first << " " << p.second;`|
+|Iterator with `->first` / `->second`|Access pair values using iterators|`for (auto it = vp.begin(); it != vp.end(); it++) cout << it->first;`|
+|`insert(vp.begin(), {a, b})`|Insert pair at a position|`vp.insert(vp.begin(), {10,20});`|
+|`erase(vp.begin() + i)`|Remove i-th pair|`vp.erase(vp.begin()+1);`|
+|`erase(vp.begin(), vp.begin()+k)`|Remove first k pairs|`vp.erase(vp.begin(), vp.begin()+2);`|
+|`swap(vp1, vp2)`|Swap two vectors of pairs|`vp1.swap(vp2);`|
+|`clear()`|Remove all pairs|`vp.clear();`|
+|`size()`|Number of pairs stored|`cout << vp.size();`|
+|`empty()`|Check if vector is empty|`if(vp.empty()) cout<<"Empty";`|
+|Sorting (by first/second)|Uses `sort` with custom comparator|`sort(vp.begin(), vp.end());` (default: sorts by `.first`, then `.second`)|
+
+---
 
 ---
 

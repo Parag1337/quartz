@@ -44,9 +44,11 @@
 
 ---
 
-# 4. [[Some Sorting And Searching Algorithms]]
+# 5. [[Some Sorting And Searching Algorithms]]
 
+---
 
+# 6. [[LinkedList]]
 
 ---
 
