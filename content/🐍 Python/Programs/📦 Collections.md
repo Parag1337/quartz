@@ -4,7 +4,6 @@ title: 📦 Collections
 
 ## 1. 📋 **List**
 
-#list
 
 - **Syntax:** `[]`
 - ✅ **Ordered**

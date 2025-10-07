@@ -39,9 +39,9 @@ int main() {
 - An **empty class** still takes up **1 byte** in memory (for unique identification/tracking).
 
 - Classes can also be **defined in separate files** and then included using:
-    ```cpp
-    #include "Hero.cpp"
-    ```
+```cpp
+#include "Hero.cpp"
+```
 - **Accessing data members:**
     - Use the `.` operator → `objectName.dataMember`
     - Example: `H1.health`

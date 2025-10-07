@@ -116,7 +116,6 @@ print(help(str))
 
 # 7. 🔢 String Indexing & Slicing
 
-#string_indexing
 
 > Indexing is accessing elements of a sequence using square brackets `[ ]`  
 > Format: `[start : end : step]`
@@ -229,7 +228,6 @@ for x in range(1, 11, 2):
 
 #  11. 🎲 Random Library Functions
 
-#random_library
 
 | Function                              | Description                                                                       | Example Usage                                  |
 | ------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -285,7 +283,7 @@ dictonaryies
 ---
 # 14. ✅ Membership Operators
 
-#membership_operator
+
 
 >_Used to test if a value exists in a sequence (`string`, `list`, `tuple`, `set`, `dict`)_
 
@@ -305,7 +303,6 @@ else:
 
 # 15. 🧠 List Comprehension
 
-#list_comprehension
 
 >_A short and clean way to build lists:_
 
@@ -334,7 +331,7 @@ Here's the corrected and clean version of your **Match Case (Switch)** example f
 ---
 
 # 16. 🧭 Match Case (Switch Alternative)  
-#match_case  
+
 *Introduced in Python 3.10+ as an alternative to switch-case*
 
 ```python
@@ -364,7 +361,6 @@ match day:
 ---
 
 # 17. 📦 Modules
-#modules
 >*A file containing code you want to include in your program use 'import' to include a module (build-in or your own) usefull to break up a large programs reusable separate files*
 
 `print(help("modules"))`
@@ -383,7 +379,6 @@ and then import example
 
 ---
 ## 18.  Scope Resolution 
-#scope_resoultion
 **variable scope** : *Where a variable is visible and accesible*
 **Scope Resolution** : *(LEGB) Local -> Enclosed -> Global -> Build-in*
 

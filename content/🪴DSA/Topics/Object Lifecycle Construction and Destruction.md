@@ -105,7 +105,7 @@ Hero(const Hero &temp) {
 ❌ If you use a pointer (`Hero* temp`), that’s not the standard copy constructor; it will only copy if you explicitly pass a pointer.
 
 ---
-## [[Copy Constructor Code]]
+## ![[Copy Constructor Code]]
 
 ---
 ## Key Points

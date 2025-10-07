@@ -61,3 +61,4 @@ tags:
 
 ---
 
+# 7. [[Stack And Queue]]
