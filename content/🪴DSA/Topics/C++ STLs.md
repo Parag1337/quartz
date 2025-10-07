@@ -202,7 +202,7 @@ dq.pop_front();  //{4,1}
 ## 5. Stack
 
 It is **LIFO** (`Last In fast Out`)
-![[LIFO-Operations-in-stack.jpg | 600]]
+![[LIFO-Operations-in-stack 1.jpg| 600]]
 
 ```cpp
 stack<int> st;
