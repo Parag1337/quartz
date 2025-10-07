@@ -108,7 +108,7 @@ int main() {
 > Operator Overloading allows redefining how operators (`+`, `-`, `()`, etc.) work for **user-defined types (classes).**
 
 ---
-
+![[Pasted image 20250930233702.png|600]]
 #### Example: Overloading `+` and `()` Operators
 
 ```cpp
@@ -196,96 +196,44 @@ int main() {
     
 ---
 
-### 💡 **Key Points (Compile-Time Polymorphism)**
+### 💡 Key Points (Compile-Time Polymorphism)
 
-|Concept|Achieved By|Resolved At|Example|
-|---|---|---|---|
-|Function Overloading|Multiple functions with same name but different parameters|Compile Time|`SayHello()`|
-|Operator Overloading|Redefining operators for class objects|Compile Time|`operator+()`|
+| Concept              | Achieved By                                                | Resolved At  | Example       |
+| -------------------- | ---------------------------------------------------------- | ------------ | ------------- |
+| Function Overloading | Multiple functions with same name but different parameters | Compile Time | `SayHello()`  |
+| Operator Overloading | Redefining operators for class objects                     | Compile Time | `operator+()` |
 
 ---
 
-## ⚙️ **2. Run-Time Polymorphism**
+## ⚙️ 2. Run-Time Polymorphism
 
 > Run-time polymorphism occurs when a **base class pointer or reference** is used to call a **derived class function** dynamically at run time.
 
+- Also Know as Dynamic Polymorphism
 It is achieved using:
 
 - **Inheritance**
-    
 - **Virtual Functions**
-    
 
 ---
 
-### **Example: Virtual Function**
+## A. Method Overriding
+
 
 ```cpp
-#include <iostream>
-using namespace std;
-
-class Base {
+class Animal {
 public:
-    virtual void show() {   // virtual keyword enables runtime polymorphism
-        cout << "Base class function" << endl;
+    virtual void sound() {
+        cout << "Animal makes a sound\n";
     }
 };
 
-class Derived : public Base {
+class Dog : public Animal {
 public:
-    void show() override {  // override keyword (optional but recommended)
-        cout << "Derived class function" << endl;
+    void sound() override {  // Correct override
+        cout << "Dog barks\n";
     }
 };
-
-int main() {
-    Base* ptr;
-    Derived d;
-    ptr = &d;
-
-    ptr->show();   // Calls Derived::show() at runtime
-
-    return 0;
-}
 ```
 
-🟢 **Explanation:**
 
-- If `virtual` keyword is not used → `Base::show()` will be called (compile-time binding).
-    
-- With `virtual`, compiler defers the call to runtime and executes `Derived::show()` instead.
-    
-
----
-
-### 💡 **Key Points (Run-Time Polymorphism)**
-
-|Concept|Achieved By|Requires|Resolved At|Example|
-|---|---|---|---|---|
-|Function Overriding|Redefining base class function in derived class|`virtual` keyword|Run Time|`show()`|
-
----
-
-## 🧠 **Summary Table**
-
-|Type|Mechanism|Example|Binding Time|
-|---|---|---|---|
-|Compile-Time|Function & Operator Overloading|`SayHello()`, `operator+`|Early Binding|
-|Run-Time|Virtual Functions (Overriding)|`show()`|Late Binding|
-
----
-
-## ⚡ **In Simple Terms**
-
-- **Compile-Time Polymorphism** → “Same name, different form — decided early.”
-    
-- **Run-Time Polymorphism** → “Same name, different behavior — decided later.”
-    
-
----
-
-Would you like me to **extend these notes** to include **Function Overriding (Virtual, Pure Virtual, Abstract Classes)** next?  
-That would complete the polymorphism topic fully.
-
-
-![[Pasted image 20250930233702.png|600]]
