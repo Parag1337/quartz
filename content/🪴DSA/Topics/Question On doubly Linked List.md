@@ -12,7 +12,7 @@ Node* ReverseDoublyLinkedList(Node* head){
 	Node* current = head;
 	Node* last = nullptr
 	while(current!=nullptr){
-		last = current ->back;
+		last = current -> back;
 		current -> back = current -> next;
 		current -> next = last
 		current = current ->back

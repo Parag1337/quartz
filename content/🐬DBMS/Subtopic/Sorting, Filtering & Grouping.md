@@ -47,13 +47,10 @@ Perfect 👍 let’s build your **GROUP BY** notes with clear explanation + exam
 
 - Definition:  
     The `GROUP BY` clause groups rows that have the same values in a specified column.
-    
 - Usag4:
     
     - Often used with aggregate functions (`SUM()`, `MAX()`, `MIN()`, `AVG()`, `COUNT()`).
-        
     - Helps summarize data by categories.
-        
 
 ---
 
@@ -172,14 +169,14 @@ GROUP BY first_name, last_name WITH ROLLUP;
 
 👉 Output will look like:
 
-|first_name|last_name|total_pay|
-|---|---|---|
-|Alice|Johnson|25.50|
-|Bob|Smith|22.00|
-|Charlie|Brown|18.75|
-|David|Wilson|30.00|
-|Eve|Davis|20.50|
-|**NULL**|**NULL**|**116.75**|
+| first_name | last_name | total_pay  |
+| ---------- | --------- | ---------- |
+| Alice      | Johnson   | 25.50      |
+| Bob        | Smith     | 22.00      |
+| Charlie    | Brown     | 18.75      |
+| David      | Wilson    | 30.00      |
+| Eve        | Davis     | 20.50      |
+| **NULL**   | **NULL**  | **116.75** |
 
 ---
 

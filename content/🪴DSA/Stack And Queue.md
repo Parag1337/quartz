@@ -76,8 +76,82 @@ int main() {
 ```
 
 ## Stack Using Linked-List
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Node structure
+class Node {
+public:
+    int data;
+    Node* next;  
+
+    Node(int val) {  
+        data = val;
+        next = NULL;
+    }
+};
+```
 ```cpp
 
+class StackImp {
+    Node* topNode;
+    int size;
+
+public:
+    StackImp() {
+        topNode = nullptr;
+        size = 0;
+    }
+
+    void push(int x) {
+        Node* temp = new Node(x);
+        temp->next = topNode; // new node points to current top
+        topNode = temp;       // update top
+        size++;
+        cout << x << " pushed to stack." << endl;
+    }
+
+    void pop() {
+        if (topNode == nullptr) {
+            cout << "Stack Underflow!" << endl;
+            return;
+        }
+        Node* temp = topNode;
+        cout << topNode->data << " popped from stack." << endl;
+        topNode = topNode->next;
+        delete temp;
+        size--;
+    }
+
+    int peek() {
+        if (topNode == nullptr) {
+            cout << "Stack is empty!" << endl;
+            return -1;
+        }
+        return topNode->data;
+    }
+
+    int length() {
+        return size;
+    }
+
+    bool isEmpty() {
+        return topNode == nullptr;
+    }
+};
+
+int main() {
+    StackImp st;
+    st.push(10);
+    st.push(20);
+    st.push(30);
+    cout << "Top element: " << st.peek() << endl;
+    st.pop();
+    cout << "Top element after pop: " << st.peek() << endl;
+    cout << "Current size: " << st.length() << endl;
+}
 ```
 
 # Queue Function (FIFO) 
@@ -167,3 +241,16 @@ int main() {
 }
 ```
 
+```cpp
+int push(int x){
+	if(curr_size == size){cout << "overflow";}
+	if(curr_size == 0){start = 0 end = 0}
+	else(start+1%size)
+	curr_size++
+	q[end] = x;
+}
+
+int pop(){ 
+	if(curr == size)
+}
+```

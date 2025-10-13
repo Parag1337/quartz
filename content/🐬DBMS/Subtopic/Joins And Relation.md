@@ -60,7 +60,7 @@ LEFT JOIN customers
 ON transactions.customer_id = customers.customer_id;
 ```
 
-📸  
+
 ![[Pasted image 20250825200309.png|200]]  
 ![[Pasted image 20250825200328.png|250]]
 
@@ -120,13 +120,13 @@ Great question 👍 Self-joins are an important SQL concept. Let’s break it do
 
 ### Example Table: `employees`
 
-|emp_id|name|manager_id|
-|---|---|---|
-|1|John|NULL|
-|2|Alice|1|
-|3|Bob|1|
-|4|Carol|2|
-|5|David|2|
+| emp_id | name  | manager_id |
+| ------ | ----- | ---------- |
+| 1      | John  | NULL       |
+| 2      | Alice | 1          |
+| 3      | Bob   | 1          |
+| 4      | Carol | 2          |
+| 5      | David | 2          |
 
 Here:
 

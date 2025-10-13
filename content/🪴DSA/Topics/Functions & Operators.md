@@ -127,18 +127,6 @@ FROM transactions;
 - **String/Scalar Functions:** CONCAT, UPPER, LOWER, LENGTH, ROUND, etc.
 - Aggregate functions are often used with **GROUP BY** for reports.
 
----
-
-Nice 👍 you’ve started notes on **SQL Operators**. I’ll improve them by:
-
-- Fixing typos (`empoyees` → `employees`, `COLOUMN` → `COLUMN`, `hire_data` → `hire_date`).
-    
-- Expanding with **clear explanations + examples**.
-    
-- Keeping your screenshot as it is.
-    
-
-Here’s the polished version ⬇️
 
 ---
 

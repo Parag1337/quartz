@@ -147,11 +147,6 @@ CREATE TABLE transaction (
 )
 ```
 
-Or add later
-```
-
-```
-
 Example 
 ```mysql
 INSERT INTO transactions (amount)
@@ -171,8 +166,6 @@ AUTO_INCREMENT = 100;
 
 ---
 ## 🔹FOREIGN KEY
-
-
 
 A **Foreign Key (FK)** is a column (or set of columns) in one table that refers to the **Primary Key** in another table.
 

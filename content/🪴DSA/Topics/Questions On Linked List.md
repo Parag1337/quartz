@@ -28,3 +28,16 @@ Node* ReverseLinkedlList(Node* head) {
 }
 
 ```
+### Reverse the linked List reclusively
+```cpp
+Node* reverseLinkedList(Node* head){
+	if(head == NULL || head ->next == NULL){
+		returnn head;
+	}
+	Node* newHead = reverseLinkedList(head ->next;)
+	Node* front = head -> next
+	front -> next = head;
+	head -> next = NULL;
+	return newHead;
+}
+```
