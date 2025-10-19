@@ -154,6 +154,74 @@ int main() {
 }
 ```
 
+## Creating Stack Using Queue
+
+```cpp
+#include <iostream>
+#include <queue>
+using namespace std;
+
+class Stack {
+    queue<int> q;
+
+public:
+    // Push element onto stack
+    void push(int x) {
+        int size = q.size();
+        q.push(x);
+        cout << x << " is pushed in stack" << endl;
+
+        // Move all previous elements behind the new one
+        for (int i = 0; i < size; i++) {
+            q.push(q.front());
+            q.pop();
+        }
+    }
+
+    // Remove top element
+    void pop() {
+        if (q.empty()) {
+            cout << "Stack Underflow!" << endl;
+            return;
+        }
+        q.pop();
+    }
+
+    // Return top element
+    int top() {
+        if (q.empty()) {
+            cout << "Stack is empty!" << endl;
+            return -1;
+        }
+        return q.front();
+    }
+
+    // Return current size
+    int size() {
+        return q.size();
+    }
+
+    // Check if empty
+    bool empty() {
+        return q.empty();
+    }
+};
+
+// Driver code
+int main() {
+    Stack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+
+    cout << "Top element: " << s.top() << endl;
+    s.pop();
+    cout << "Top after pop: " << s.top() << endl;
+    cout << "Current size: " << s.size() << endl;
+
+    return 0;
+}
+```
 # Queue Function (FIFO) 
 
 ![[First-In-First-Out-Queue-1024x683.png|500]]
@@ -241,16 +309,260 @@ int main() {
 }
 ```
 
+## Queue Using LinkedList
+
 ```cpp
-int push(int x){
-	if(curr_size == size){cout << "overflow";}
-	if(curr_size == 0){start = 0 end = 0}
-	else(start+1%size)
-	curr_size++
-	q[end] = x;
+#include <iostream>
+using namespace std;
+
+// Node structure
+class Node {
+public:
+    int val;
+    Node* next;  
+
+    Node(int data) {  
+        val = data;
+        next = NULL;
+    }
+};
+```
+
+```cpp
+// Queue class
+class Queue {
+    Node* start;
+    Node* end;
+    int size;
+
+public:
+    Queue() {
+        start = nullptr;
+        end = nullptr;
+        size = 0;
+    }
+
+    void push(int x) {
+        Node* temp = new Node(x);
+        if (start == nullptr) {  // First element case
+            start = end = temp;
+        } else {
+            end->next = temp;
+            end = temp;
+        }
+        size++;
+    }
+
+    void pop() {
+        if (size == 0) {
+            cout << "Queue Underflow\n";
+            return;
+        }
+        Node* temp = start;
+        start = start->next;
+        delete temp;
+        size--;
+        if (start == nullptr) end = nullptr; // reset end when queue becomes empty
+    }
+
+    int peek() {
+        if (size == 0) {
+            cout << "Queue is empty\n";
+            return -1;  // return an invalid value
+        }
+        return start->val;
+    }
+
+    int length() {
+        return size;
+    }
+};
+
+int main() {
+    Queue q;
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    cout << "Front element: " << q.peek() << endl;
+    q.pop();
+    cout << "Front after pop: " << q.peek() << endl;
+    cout << "Queue size: " << q.length() << endl;
 }
 
-int pop(){ 
-	if(curr == size)
+```
+
+## Creating Queue using stack
+
+### Approach 1
+
+- if your code has lot of pop or top operations then use this operation 
+- Since push is very expensive here
+```cpp
+#include <iostream>
+#include <stack>
+using namespace std;
+
+class Queue {
+    stack<int> s1, s2;
+
+public:
+    // Enqueue (push)
+    void push(int x) {
+        // Move all elements from s1 to s2
+        while (!s1.empty()) {
+            s2.push(s1.top());
+            s1.pop();
+        }
+
+        // Push new element into s1
+        s1.push(x);
+
+        // Move all elements back from s2 to s1
+        while (!s2.empty()) {
+            s1.push(s2.top());
+            s2.pop();
+        }
+
+        cout << x << " is pushed in queue" << endl;
+    }
+
+    // Dequeue (pop)
+    void pop() {
+        if (s1.empty()) {
+            cout << "Queue Underflow!" << endl;
+            return;
+        }
+        s1.pop();
+    }
+
+    // Get front element
+    int peek() {
+        if (s1.empty()) {
+            cout << "Queue is empty!" << endl;
+            return -1;
+        }
+        return s1.top();
+    }
+
+    // Get size
+    int size() {
+        return s1.size();
+    }
+
+    // Check if empty
+    bool empty() {
+        return s1.empty();
+    }
+};
+
+// Driver code
+int main() {
+    Queue q;
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    cout << "Front element: " << q.peek() << endl;
+    q.pop();
+    cout << "Front after pop: " << q.peek() << endl;
+    cout << "Queue size: " << q.size() << endl;
 }
+
+```
+
+### Approach 2
+
+- If your algorithm has lot of push operations then use this algorithm 
+- Here pop and top is expensive 
+```cpp
+#include <iostream>
+#include <stack>
+using namespace std;
+
+class Queue {
+    stack<int> s1, s2;  // two stacks
+
+public:
+    // Push operation — O(1)
+    void push(int x) {
+        s1.push(x);
+        cout << x << " is pushed in queue" << endl;
+    }
+
+    // Pop operation — O(n)
+    void pop() {
+        if (s1.empty()) {
+            cout << "Queue Underflow!" << endl;
+            return;
+        }
+
+        // Move all elements except the last one to s2
+        while (s1.size() > 1) {
+            s2.push(s1.top());
+            s1.pop();
+        }
+
+        // Remove the front element (bottom of s1)
+        s1.pop();
+
+        // Move everything back to s1
+        while (!s2.empty()) {
+            s1.push(s2.top());
+            s2.pop();
+        }
+    }
+
+    // Peek front element
+    int peek() {
+        if (s1.empty()) {
+            cout << "Queue is empty!" << endl;
+            return -1;
+        }
+
+        // Move all elements to s2 to access front
+        while (s1.size() > 1) {
+            s2.push(s1.top());
+            s1.pop();
+        }
+
+        int front = s1.top();  // front element
+
+        // Move it to s2 temporarily
+        s2.push(front);
+        s1.pop();
+
+        // Move everything back to s1
+        while (!s2.empty()) {
+            s1.push(s2.top());
+            s2.pop();
+        }
+
+        return front;
+    }
+
+    // Return current size
+    int size() {
+        return s1.size();
+    }
+
+    bool empty() {
+        return s1.empty();
+    }
+};
+
+int main() {
+    Queue q;
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    cout << "Front element: " << q.peek() << endl;
+    q.pop();
+    cout << "Front after pop: " << q.peek() << endl;
+    cout << "Queue size: " << q.size() << endl;
+
+    return 0;
+}
+
 ```

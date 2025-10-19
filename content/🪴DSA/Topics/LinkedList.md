@@ -7,3 +7,7 @@ tags:
 
 ---
 # [[Doubly Linked List]]
+
+---
+
+# [[Questions On Linked List]]

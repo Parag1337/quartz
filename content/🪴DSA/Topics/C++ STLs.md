@@ -505,7 +505,6 @@ int main() {
 ```
 
 - Output:
-    
 
 ```
 123
@@ -538,14 +537,14 @@ int main() {
 
 ✅ Summary of Useful STL Functions
 
-|Function|Use|
-|---|---|
-|`sort(a, a+n)`|Sort ascending|
-|`sort(a, a+n, greater<int>())`|Sort descending|
-|`__builtin_popcount(x)`|Count set bits in `int`|
-|`__builtin_popcountll(x)`|Count set bits in `long long`|
-|`next_permutation(begin, end)`|Next lexicographical permutation|
-|`max_element(begin, end)`|Find max element|
-|`min_element(begin, end)`|Find min element|
+| Function                       | Use                              |
+| ------------------------------ | -------------------------------- |
+| `sort(a, a+n)`                 | Sort ascending                   |
+| `sort(a, a+n, greater<int>())` | Sort descending                  |
+| `__builtin_popcount(x)`        | Count set bits in `int`          |
+| `__builtin_popcountll(x)`      | Count set bits in `long long`    |
+| `next_permutation(begin, end)` | Next lexicographical permutation |
+| `max_element(begin, end)`      | Find max element                 |
+| `min_element(begin, end)`      | Find min element                 |
 
 ---

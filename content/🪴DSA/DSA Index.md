@@ -62,3 +62,7 @@ tags:
 ---
 
 # 7. [[Stack And Queue]]
+
+---
+
+# 8. [[Binary Tree]]
