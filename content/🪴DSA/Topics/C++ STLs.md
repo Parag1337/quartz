@@ -3,7 +3,6 @@ title: C++ STLs
 date: 2025-10-01
 tags: 
 ---
-Got it 👍 I’ll polish your notes for **STL Pairs & Vectors** into clean, well-structured Obsidian-style notes with headings, tables, code blocks, and explanations.
 
 ---
 
