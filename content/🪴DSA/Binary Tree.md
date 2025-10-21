@@ -94,7 +94,7 @@ public:
         this->data = data;
         left = right = nullptr;
     }
-};
+	};
 
 int main() {
     // Create the root node
@@ -115,3 +115,117 @@ int main() {
 }
 
 ```
+
+
+---
+
+# Traversal Techniques (BFS / DFS)
+
+Traversal means **visiting every node** of a binary tree exactly once in a particular order.  
+It is mainly classified into two types:
+
+1. **Depth First Traversal (DFS)**
+2. **Breadth First Traversal (BFS)**
+
+---
+
+## Depth First Traversal (DFS)
+
+DFS explores as far as possible along each branch before backtracking.  
+It uses a **stack** (either explicitly or via recursion).
+
+### Common DFS Orders:
+
+1. **Inorder Traversal** → `(Left → Root → Right)`
+2. **Preorder Traversal** → `(Root → Left → Right)`
+3. **Postorder Traversal** → `(Left → Right → Root)`
+
+---
+
+### Example 1                                     Example 2
+
+![[Pasted image 20251019220359.png|300]]   ![[Pasted image 20251019221209.png|300]]
+
+
+
+### 1️⃣ Inorder Traversal (Left → Root → Right)
+
+- **Definition:**  
+    Visit the **left subtree**, then the **root**, and finally the **right subtree**.
+    
+- **Used for:**  
+    Getting **sorted order** of elements in a **Binary Search Tree (BST)**.
+    
+
+**Example 1 Output:**  
+`4 5 6` → `1` → `6 3 7`  
+**Final Order:** `4 5 6 1 6 3 7`
+
+**Example 2 Output:**  
+`4 2` → `8 5` → `1` → `6 3` → `9 7 10`  
+**Final Order:** `4 2 8 5 1 6 3 9 7 10`
+
+---
+
+### 2️⃣ Preorder Traversal (Root → Left → Right)
+
+- **Definition:**  
+    Visit the **root** first, then **left subtree**, and finally **right subtree**.
+    
+- **Used for:**  
+    Copying or **creating a clone** of the tree.
+    
+
+**Example 1 Output:**  
+`1` → `2 4 5` → `3 6 7`  
+**Final Order:** `1 2 4 5 3 6 7`
+
+**Example 2 Output:**  
+`1` → `2 4` → `5 8` → `3 6` → `7 9 10`  
+**Final Order:** `1 2 4 5 8 3 6 7 9 10`
+
+---
+
+### 3️⃣ Postorder Traversal (Left → Right → Root)
+
+- **Definition:**  
+    Visit the **left subtree**, then **right subtree**, and finally the **root**.
+    
+- **Used for:**  
+    **Deleting** or **freeing** the tree from memory (since children are processed before the parent).
+    
+
+**Example 1 Output:**  
+`4 5 2 6 3 7 1`
+
+**Example 2 Output:**  
+`4 8 5 2 6 9 10 7 3 1`
+
+---
+
+## 🌾 Breadth First Traversal (BFS)
+
+![[Pasted image 20251019235035.png|300]]
+
+- Also called **Level Order Traversal**.
+    
+- Visits nodes **level by level**, from **top to bottom** and **left to right**.
+    
+- Implemented using a **queue**.
+    
+
+**Order:**  
+`1 2 3 4 5 6 7 8 9 10`
+
+---
+More Example To practise
+![[postorder-traversal-1.png|300]] ![[Binary-Search-Tree-Example.png|250]] ![[Pasted image 20251020181215.png|300]]
+
+---
+# [[Traversal in Binary Tree]]
+
+1. Inorder Traversal (`Left → Root → Right`)
+2. Preorder Traversal `(Root → left → Right`)
+3. Postorder Traversal (`Left → Right → Root`)
+
+
