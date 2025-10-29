@@ -85,7 +85,7 @@ void postorder(Node* root) {
 
 ---
 
-# Final Code
+## Final Code
 ```cpp
 #include <iostream>
 using namespace std;
@@ -168,4 +168,39 @@ int main() {
     return 0;
 }
 
+```
+
+# Traversal By level
+
+```cpp
+vector<vector<int> levelOrder(Node* Head){
+	vector<vector<int> ans;
+	if(root == nullptr return ans;)
+	
+	queue<Node*> q;
+	q.pushback(root);
+	
+	while(!q.empty()){
+		int size = q.size();
+		vector<int> level;
+		while(int i = 0;i<size;i++){
+			Node* temp = q.front();
+			q.pop();
+			if(temp -> left != nullptr) q.push(node -> left);
+			if(temp -> right != nullptr) q.push(node -> right);
+			level.pushback(node->val)
+			}
+			ans.pushback(level);
+		}
+		return ans;
+	}
+	
+}
+```
+
+## ⚙️ 1. Inorder Traversal Iterative (Left → Root → Right)
+```cpp
+vector<int> Preorder(Node* Head){
+	
+}
 ```

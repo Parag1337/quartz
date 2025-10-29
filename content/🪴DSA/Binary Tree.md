@@ -152,7 +152,6 @@ It uses a **stack** (either explicitly or via recursion).
 
 - **Definition:**  
     Visit the **left subtree**, then the **root**, and finally the **right subtree**.
-    
 - **Used for:**  
     Getting **sorted order** of elements in a **Binary Search Tree (BST)**.
     
