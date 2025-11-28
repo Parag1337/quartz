@@ -112,9 +112,6 @@ HAVING COUNT(*) > 1;
 
 ---
 
-Nice 👍 let’s go step by step with **ROLLUP** and then apply it to your `employees` table example.
-
----
 
 # ROLLUP
 
@@ -134,6 +131,7 @@ Nice 👍 let’s go step by step with **ROLLUP** and then apply it to your `emp
 | TXN1006        | 799.00 | 6           | 2025-08-10 |
 | TXN1007        | 15.25  | 2           | 2025-08-11 |
 | TXN1008        | 300.00 | 4           | 2025-08-13 |
+|                |        |             |            |
 
 ```sql
 SELECT order_date, SUM(amount) AS total_amount

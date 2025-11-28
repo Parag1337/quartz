@@ -131,9 +131,7 @@ Great question 👍 Self-joins are an important SQL concept. Let’s break it do
 Here:
 
 - `emp_id` → employee’s unique ID
-    
 - `manager_id` → references the employee ID of the manager
-    
 
 ---
 

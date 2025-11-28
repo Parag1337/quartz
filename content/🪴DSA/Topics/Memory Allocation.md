@@ -55,16 +55,15 @@ int main() {
 ```
 
 ---
-
 ## 🔹 Important Notes
 
 1. **Static Allocation**
 ```cpp
-    Hero a;   // object created on stack
-    ```
+	 Hero a;   // object created on stack
+ ```
     - Automatically destroyed when scope ends.
 2. **Dynamic Allocation**
-    ```cpp
+```cpp
     Hero *b = new Hero;  // object created on heap
     delete b;            // must be deleted manually
     ```
@@ -73,7 +72,6 @@ int main() {
         - `b->setHealth(70);` ✅ (preferred)
 
 ---
-
 ## ![[Combined Example (Static + Dynamic Together)]]
 
 ---

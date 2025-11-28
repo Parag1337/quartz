@@ -127,80 +127,120 @@ void postorder(Node* root) {
     cout << root->data << " ";
 }
 
-int main() {
-    // Manually creating the given tree
-    /*
-                    39
-                 /      \
-               29        49
-              /  \      /  \
-            24   34   44   59
-           /  \             / \
-         14   27          54  69
-    */
 
-    Node* root = newNode(39);
-    root->left = newNode(29);
-    root->right = newNode(49);
-
-    root->left->left = newNode(24);
-    root->left->right = newNode(34);
-    root->left->left->left = newNode(14);
-    root->left->left->right = newNode(27);
-
-    root->right->left = newNode(44);
-    root->right->right = newNode(59);
-    root->right->right->left = newNode(54);
-    root->right->right->right = newNode(69);
-
-    cout << "Inorder Traversal: ";
-    inorder(root);
-    cout << endl;
-
-    cout << "Preorder Traversal: ";
-    preorder(root);
-    cout << endl;
-
-    cout << "Postorder Traversal: ";
-    postorder(root);
-    cout << endl;
-
-    return 0;
-}
 
 ```
 
 # Traversal By level
 
 ```cpp
-vector<vector<int> levelOrder(Node* Head){
-	vector<vector<int> ans;
-	if(root == nullptr return ans;)
-	
-	queue<Node*> q;
-	q.pushback(root);
-	
-	while(!q.empty()){
-		int size = q.size();
-		vector<int> level;
-		while(int i = 0;i<size;i++){
-			Node* temp = q.front();
-			q.pop();
-			if(temp -> left != nullptr) q.push(node -> left);
-			if(temp -> right != nullptr) q.push(node -> right);
-			level.pushback(node->val)
-			}
-			ans.pushback(level);
-		}
-		return ans;
-	}
-	
+vector<vector<int>> levelOrder(Node* Head) {
+    vector<vector<int>> ans;
+    if (Head == nullptr) return ans;
+
+    queue<Node*> q;
+    q.push(Head);    
+
+    while (!q.empty()) {
+        int size = q.size();
+        vector<int> level;
+
+        for (int i = 0; i < size; i++) {
+            Node* temp = q.front();
+            q.pop();
+
+            level.push_back(temp->data);
+
+            if (temp->left != nullptr) q.push(temp->left);
+            if (temp->right != nullptr) q.push(temp->right);
+        }
+
+        ans.push_back(level);
+    }
+
+    return ans;
 }
 ```
 
-## ⚙️ 1. Inorder Traversal Iterative (Left → Root → Right)
 ```cpp
-vector<int> Preorder(Node* Head){
+vector<vector<int> levelorder(Node* Head){
+	vector<vector<int> ans;
+	if(Head == nullptr){return ans;}
+	queue<Node*> q;
+	q.push(Head);
 	
+	while(!q.empty()) {
+		int size = q.size();
+		vector<int> level;
+		
+		for(int i = 0; i<size;i++){
+			Node* temp = q.front();
+			q.pop();
+			
+			if(temp -> left != nullptr){q.push_back(temp -> left)}
+			if(temp -> right != nullptr){q.push_back(temp -> right)}
+		}
+		ans.push_back(level);
+	}
+	return ans;
 }
+```
+
+## ⚙️ 1. Preorder Traversal Iterative (Root → left → Right)
+```cpp
+vector<int> Preorder(Node* Head) {
+    vector<int> ans;
+    if (Head == nullptr) return ans;
+
+    stack<Node*> st;
+    st.push(Head);
+
+    while (!st.empty()) {
+        Node* temp = st.top();
+        st.pop();
+
+        ans.push_back(temp->data);  // Visit the node
+
+        // Push right child first so left is processed first (LIFO)
+        if (temp->right != nullptr) st.push(temp->right);
+        if (temp->left != nullptr) st.push(temp->left);
+    }
+
+    return ans;
+}
+```
+
+## ⚙️ 2. Inorder Traversal Iterative (Left → Root → Right)
+
+```cpp
+
+vector<int> inorder(Node* head) {
+    vector<int> ans;
+    stack<Node*> st;
+    Node* temp = head;
+
+    while (temp != nullptr || !st.empty()) {
+        // Go to the leftmost node
+        while (temp != nullptr) {
+            st.push(temp);
+            temp = temp->left;
+        }
+
+        // Process the top node
+        temp = st.top();
+        st.pop();
+        ans.push_back(temp->data);
+
+        // Move to the right subtree
+        temp = temp->right;
+    }
+
+    return ans;
+}
+```
+
+## ⚙️ 3. Post-order Traversal Iterative (Left → Right → Root)
+
+```cpp
+
 ```

@@ -5,13 +5,13 @@ tags:
 ---
 
 
-# Binary Sort 
+# Binary Search
 
 - Elements Should be in Monotonic Function ie Increasing Or Decreasing 
 
 
 ```c
-#include <iostream>
+
 using namespace std;
 
 int BinarySearch(int arr[], int size, int key) {

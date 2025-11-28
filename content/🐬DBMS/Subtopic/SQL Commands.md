@@ -4,14 +4,14 @@ title: SQL Commands
 
 ## 1. Database Commands
 
-|Command|Description|
-|---|---|
-|`CREATE DATABASE db_name;`|Create a new database|
-|`USE db_name;`|Switch to a database|
-|`DROP DATABASE db_name;`|Delete a database permanently|
-|`ALTER DATABASE db_name READ ONLY = 1;`|Set database to read-only (may not be supported in all versions)|
-|`ALTER DATABASE db_name CHARACTER SET utf8;`|Change database character set|
-|`SHOW DATABASES;`|List all databases|
+| Command                                      | Description                                                      |
+| -------------------------------------------- | ---------------------------------------------------------------- |
+| `CREATE DATABASE db_name;`                   | Create a new database                                            |
+| `USE db_name;`                               | Switch to a database                                             |
+| `DROP DATABASE db_name;`                     | Delete a database permanently                                    |
+| `ALTER DATABASE db_name READ ONLY = 1;`      | Set database to read-only (may not be supported in all versions) |
+| `ALTER DATABASE db_name CHARACTER SET utf8;` | Change database character set                                    |
+| `SHOW DATABASES;`                            | List all databases                                               |
 
 ---
 

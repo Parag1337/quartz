@@ -99,14 +99,10 @@ CALL find_customers('Alice', 'Johnson');
     - `INOUT` → both input and output
 
 - Stored procedures improve **reusability**, **security**, and **performance**.
----
-
-
-Absolutely! Let’s extend your **Stored Procedure** notes with an **OUT parameter example** — very useful for returning values from a procedure.  
 
 ---
 
-## Stored Procedure with OUT Parameter  
+## Stored Procedure with OUT Paameter  
 
 ### 🔹 What is an OUT Parameter?
 - `OUT` parameters **return a value** from the procedure to the caller.  

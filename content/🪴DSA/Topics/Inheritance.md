@@ -59,6 +59,7 @@ int main() {
 }
 ```
 
+
 ---
 
 ### Access Control in Inheritance

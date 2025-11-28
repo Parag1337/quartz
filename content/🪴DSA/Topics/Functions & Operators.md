@@ -97,7 +97,7 @@ SELECT UPPER(first_name), LOWER(last_name)
 FROM customers;
 ```
 
----
+--
 
 ### 🔹 LENGTH()
 

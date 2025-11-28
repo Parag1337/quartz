@@ -25,7 +25,6 @@ title : MySQL
 
 ---
 
-
 # ⌚[[SQL Transactions & Date Time]]
 
 1. Commit, Autocommit, Rollback

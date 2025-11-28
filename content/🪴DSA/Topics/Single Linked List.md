@@ -276,9 +276,11 @@ Node* InsertAtK(Node* head, int k, int value) {
 }
 
 ```
-
+	
 
 
 ![[Pasted image 20251002142159.png | 500]]
 
 [[Questions On Linked List]]
+
+

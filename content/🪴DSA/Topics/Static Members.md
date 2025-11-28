@@ -10,8 +10,9 @@ title: Static Members
 
 - Declared with the `static` keyword inside a class.
 - Belong to the **class itself**, not to individual objects.
-- **Only one copy** exists, shared among all objects of that class.
+- Only **one copy** exists in memory, no matter how many objects you create.
 - Must be **defined & initialized outside** the class using the **scope resolution operator `::`**.
+
 
 👉 Syntax:
 
