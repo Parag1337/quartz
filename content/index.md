@@ -17,8 +17,4 @@ title : Index
 
 ---
 
-
-# Hello World
-
-Hello duniya
-# testing done
+take time but works 
