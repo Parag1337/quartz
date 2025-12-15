@@ -4,7 +4,7 @@ title : Index
 
 # Welcome to My notes
 
-# 1. [[Python For Engineering]]
+# 1. [[Python]]
 
 ---
 # 2. [[Git And Github]]

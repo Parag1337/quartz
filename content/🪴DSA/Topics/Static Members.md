@@ -1,7 +1,7 @@
 ---
 title: Static Members
 ---
-
+ 
 # Static Members & Static Functions in C++
 
 ---

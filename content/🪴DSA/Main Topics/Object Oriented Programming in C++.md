@@ -58,3 +58,15 @@ Accessing the class
 ---
 
 # [[Polymorphism]]
+
+---
+
+# [[File Handling]]
+
+---
+
+# [[Generic Programming]]
+
+---
+
+# [[Exception Handling]]

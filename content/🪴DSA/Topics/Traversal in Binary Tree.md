@@ -195,6 +195,7 @@ vector<int> Preorder(Node* Head) {
     stack<Node*> st;
     st.push(Head);
 
+
     while (!st.empty()) {
         Node* temp = st.top();
         st.pop();

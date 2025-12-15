@@ -69,9 +69,6 @@ tags:
 
 
 ---
-
-# 9. [[File Handling]]
+# 9. [[Hashing]]
 
 ---
-
-# 10. [[Hashing]]

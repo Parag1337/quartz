@@ -2,7 +2,7 @@
 title: Object Oriented Programming in Python
 ---
 
-[[Python For Engineering]]
+[[Python]]
 
 
 **Object** : A "Bundle" of related attributed (variable) and methods (functions)

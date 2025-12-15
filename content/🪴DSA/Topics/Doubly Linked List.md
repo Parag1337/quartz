@@ -76,6 +76,10 @@ Node* convertArr2DLL(vector<int> &arr){
 }
 ```
 
+```
+Node* convertAre2LL(vector)
+```
+
 **Explanation:**
 
 1. Create the **head node** from first element.
