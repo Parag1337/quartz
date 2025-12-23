@@ -4,6 +4,7 @@ title : Index
 
 # Welcome to My notes
 
+
 # 1. [[Python]]
 
 ---
@@ -17,4 +18,3 @@ title : Index
 
 ---
 
-take time but works 
