@@ -93,6 +93,75 @@ int main() {
 
 ```
 
+
+---
+# Question 
+ 
+```
+1 2 3 4 5 6 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < n - i + 1; j++) {
+            cout << j + 1 << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
+---
+# Question 
+```
+          *  
+        * * *   
+      * * * * *    
+    * * * * * * *     
+  * * * * * * * * *      
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+
+        // Print leading spaces
+        for (int j = 0; j < n - i; j++) {
+            cout << "  ";
+        }
+
+        // Print stars
+        for (int j = 0; j < 2 * i - 1; j++) {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
 ---
 # Question 4 : Triangle with Rev Alphabets
 
@@ -124,6 +193,129 @@ int main() {
 ```
 
 ---
+# Question
+
+```
+  * * * * * * *  
+    * * * * *   
+      * * *    
+        *     
+         
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+
+        // Leading spaces
+        for (int j = 0; j < i - 1; j++) {
+            cout << "  ";
+        }
+
+        // Stars
+        for (int j = 0; j < 2 * (n - i) + 1; j++) {
+            cout << "* ";
+        }
+	
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
+
+---
+# Question
+```
+ *
+ *  *
+ *  *  *
+ *  *  *  *
+ *  *  *  *  *
+ *  *  *  *
+ *  *  *
+ *  *
+ * 
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter n : ";
+    cin >> n;
+
+    for (int i = 1; i <= 2 * n - 1; i++) {
+
+        int stars = i;
+        if (i > n)
+            stars = 2 * n - i;
+
+        for (int j = 0; j < stars; j++) {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+}
+```
+
+---
+
+# Question
+
+```
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter n: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        // Print increasing numbers
+        for (int j = 0; j < i; j++)
+        {
+            cout << j + 1;
+        }
+
+        // Print spaces
+        for (int j = 0; j < 2 * (n - i); j++)
+        {
+            cout << " ";
+        }
+
+        // Print decreasing numbers
+        for (int j = 0; j < i; j++)
+        {
+            cout << i - j;
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+```
 # Question 5 : Rectangle Mix of Dash And Star
 
 ```
@@ -217,6 +409,40 @@ int main() {
 *************
 
 ```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter n: ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            // Print '*' on the boundary
+            if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
 ```c
 
 // This one is slightly unbalanced
@@ -224,7 +450,7 @@ int main() {
 using namespace std;
 
 int main() {
-    int l, b;
+	    int l, b;
     cout << "Enter the length and breadth: ";
     cin >> l >> b;
 
@@ -321,3 +547,7 @@ int main() {
 }
 
 ```
+
+![[Pasted image 20260808000610.png]]
+
+https://youtu.be/tNm_NNSB3_w?si=6PY8y4DuYmDTEdQl

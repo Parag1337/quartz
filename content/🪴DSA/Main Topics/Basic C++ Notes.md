@@ -21,7 +21,6 @@ int main() {
     - Tabs (`'\t'`)
     - Newlines (`'\n'`) — when you press Enter)
 
-
 ---
 
 # 🧠 Data Types & Variables
@@ -80,7 +79,6 @@ cout << sizeof(a);  // Output: 4 (on most systems)
 | Character          | `char ch = 'a'`  | `01100001`                            | ASCII of 'a' = 97             |
 | Boolean            | `bool b = true`  | `00000001`                            | Stored as 1 (true), 0 (false) |
 | Floating Point     | `float f = 3.14` | IEEE 754 format                       | Approx. ±3.4e38               |
-
 
 ---
 
@@ -185,7 +183,6 @@ else {
 - Divide by 2, store remainder
 - Repeat until `n == 0`
 - Reverse the remainders
-
 
 ```cpp
 ans = (digit * place) + ans;

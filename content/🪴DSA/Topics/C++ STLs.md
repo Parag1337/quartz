@@ -16,7 +16,6 @@ STL is divided into **4 main components**:
 4. **Iterators** – Objects to point to elements inside containers
 
 ---
-
 ## 1. Pair
 
 - A `pair` is a simple container to store **two values together**.
@@ -148,24 +147,23 @@ v.clear();            // Erase all elements
 
 ### 📌 **Table: Common Operations on `vector<pair<int,int>>`**
 
-|**Operation**|**Description**|**Example**|
-|---|---|---|
-|`push_back({a, b})`|Adds a pair at the end|`vector<pair<int,int>> vp; vp.push_back({1,2});`|
-|`emplace_back(a, b)`|Adds a pair (faster than `push_back`)|`vp.emplace_back(3,4);`|
-|`vp[i].first`|Access first element of i-th pair|`cout << vp[0].first; // 1`|
-|`vp[i].second`|Access second element of i-th pair|`cout << vp[0].second; // 2`|
-|`for (auto p : vp)`|Range loop over pairs|`for (auto p : vp) cout << p.first << " " << p.second;`|
-|Iterator with `->first` / `->second`|Access pair values using iterators|`for (auto it = vp.begin(); it != vp.end(); it++) cout << it->first;`|
-|`insert(vp.begin(), {a, b})`|Insert pair at a position|`vp.insert(vp.begin(), {10,20});`|
-|`erase(vp.begin() + i)`|Remove i-th pair|`vp.erase(vp.begin()+1);`|
-|`erase(vp.begin(), vp.begin()+k)`|Remove first k pairs|`vp.erase(vp.begin(), vp.begin()+2);`|
-|`swap(vp1, vp2)`|Swap two vectors of pairs|`vp1.swap(vp2);`|
-|`clear()`|Remove all pairs|`vp.clear();`|
-|`size()`|Number of pairs stored|`cout << vp.size();`|
-|`empty()`|Check if vector is empty|`if(vp.empty()) cout<<"Empty";`|
-|Sorting (by first/second)|Uses `sort` with custom comparator|`sort(vp.begin(), vp.end());` (default: sorts by `.first`, then `.second`)|
+| **Operation**                        | **Description**                       | **Example**                                                                |
+| ------------------------------------ | ------------------------------------- | -------------------------------------------------------------------------- |
+| `push_back({a, b})`                  | Adds a pair at the end                | `vector<pair<int,int>> vp; vp.push_back({1,2});`                           |
+| `emplace_back(a, b)`                 | Adds a pair (faster than `push_back`) | `vp.emplace_back(3,4);`                                                    |
+| `vp[i].first`                        | Access first element of i-th pair     | `cout << vp[0].first; // 1`                                                |
+| `vp[i].second`                       | Access second element of i-th pair    | `cout << vp[0].second; // 2`                                               |
+| `for (auto p : vp)`                  | Range loop over pairs                 | `for (auto p : vp) cout << p.first << " " << p.second;`                    |
+| Iterator with `->first` / `->second` | Access pair values using iterators    | `for (auto it = vp.begin(); it != vp.end(); it++) cout << it->first;`      |
+| `insert(vp.begin(), {a, b})`         | Insert pair at a position             | `vp.insert(vp.begin(), {10,20});`                                          |
+| `erase(vp.begin() + i)`              | Remove i-th pair                      | `vp.erase(vp.begin()+1);`                                                  |
+| `erase(vp.begin(), vp.begin()+k)`    | Remove first k pairs                  | `vp.erase(vp.begin(), vp.begin()+2);`                                      |
+| `swap(vp1, vp2)`                     | Swap two vectors of pairs             | `vp1.swap(vp2);`                                                           |
+| `clear()`                            | Remove all pairs                      | `vp.clear();`                                                              |
+| `size()`                             | Number of pairs stored                | `cout << vp.size();`                                                       |
+| `empty()`                            | Check if vector is empty              | `if(vp.empty()) cout<<"Empty";`                                            |
+| Sorting (by first/second)            | Uses `sort` with custom comparator    | `sort(vp.begin(), vp.end());` (default: sorts by `.first`, then `.second`) |
 
----
 
 ---
 
